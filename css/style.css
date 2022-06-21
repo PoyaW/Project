@@ -6,31 +6,43 @@
 *{
     /* border: solid 1px; */
     box-sizing: border-box;
-    position: relative
+    position: relative;
+    user-select: none;
 }
 
 html,body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
     background-color: #D7C4BB;
+}
+
+.bodyImg-index{
     background-image: url(../material/bg-1.png), url(../material/bg-2.png) ;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     background-position-x: 250px;
 }
 
-.main{
-    /* border: solid 1px; */
-
-    height: 100%;
-    width: 100%;
-    /* background-image: url(../material/bg-1.png), url(../material/bg-2.png) ; */
-    /* background-repeat: no-repeat, no-repeat;
+.bodyImg-contact{
+    /* background-image: url(../material/bg-4.png), url(../material/bg-3.png) ;
+    background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     background-position-x: 250px; */
+
+    background-image: url(../material/bg-4.png), url(../material/bg-3.png) ;
+    background-repeat: no-repeat;
+    background-size: contain, contain;
+    background-position-y: 200px, 0px;
+    background-position-x: 250px, 800px;
+    /* transform:rotate(21.17deg); */
+}
+
+.main{
+    height: 100%;
+    width: 100%;
 }
 
 header{
@@ -84,7 +96,7 @@ header{
 
 
 .container{
-    margin-top: 36px;
+    margin-top: 50px;
     margin-left: 80px;
     display: flex;
 }
@@ -147,7 +159,6 @@ a{
 .itembox{
     width:280px;
     margin-right: 30px;
-    user-select: none;
 }
 
 .probox{
@@ -282,7 +293,7 @@ a{
 
 .item-img{
     top: 200px;
-    left: -25px;
+    left: -30px;
     background-repeat: no-repeat;
     background-size:cover;
 
@@ -311,7 +322,8 @@ a{
 .item-img-leaf{
     height: 260px;
     width: 300px;
-    left: -70px;
+    top: 220px;
+    left: -50px;
     background-image: url(../images/Index/tealeaf.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -379,25 +391,21 @@ a{
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 35px;
     background-image: url(../material/bottom_line.png);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size:cover;
+
+    height: 35px;
+    width: 100%;
+
+    position:absolute;
+    margin-top: 18px;
 }
 
-.footer span{
-    /* padding-right: 50px; */
-}
-
-.footer div
+.footer a
 {
     margin-right: 50px;
-    /* top: -25px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .footer .facebook::before
@@ -439,7 +447,7 @@ a{
     content: '';
     background-image:url(../images/Contact/line.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     
     top: -40px;
     margin-bottom: 10px;
@@ -454,4 +462,122 @@ a{
     top: -50px;
     opacity: 1;
     transition-duration: 0.5s;
+}
+
+/*sub-Container 共用*/
+.sub-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: -30px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-1{
+    display: flex;
+    flex-direction: row;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.title-2{
+    display: flex;
+    flex-direction: row;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sub-Container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    top: -50px;
+}
+
+
+/*Contact*/
+.contact-a{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-a:hover .contact-img{
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    transition-duration: 0.2s;
+}
+
+.sub-Container-main .contact-img{
+    padding-bottom: 10px;
+    width: 80px;
+}
+
+/*Orders*/
+
+.sub-Container-left{
+    padding: 0px 50px;
+}
+
+.sub-Container-right{
+    padding: 0px 50px;
+}
+
+.sub-Container-main img{
+    width:400px;
+}
+
+.left-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+
+    height: 100px;
+}
+
+
+.right-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+
+    height: 100px;
+}
+
+
+.right-bottom-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+}
+
+.left-bottom-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
 }

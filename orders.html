@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>線上點餐</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="menubox">
+                <div class="logo">
+                    <a href="index.html"><img class="logoImg" src="images/Index/logo.png"></a>
+                </div>
+                <div class="menu">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="index.html">
+                            <div class="nav-list-img"></div>
+                            <span class="text-c color-bubble">首　　頁</span>
+                            <br>
+                            <span class="text-e color-beanlight">Top Page</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="news.html">
+                            <div class="nav-list-img"></div>
+                            <span class="text-c color-bubble">最新消息</span>
+                            <br>
+                            <span class="text-e color-beanlight">News</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a>
+                            <div class="nav-list-img"></div>
+                            <span class="text-c color-bubble">飲品菜單</span>
+                            <br>
+                            <span class="text-e color-beanlight">Drinks menu</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="store.html">
+                            <div class="nav-list-img"></div>
+                            <span class="text-c color-bubble">門市據點</span>
+                            <br>
+                            <span class="text-e color-beanlight">Store</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="orders.html">
+                            <div class="nav-list-img"></div>
+                            <span class="text-c color-bubble">線上點餐</span>
+                            <br>
+                            <span class="text-e color-beanlight">Online order</span>
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="contact.html">
+                            <div class="nav-list-img"></div>
+                            <span class="text-c color-bubble">聯絡我們</span>
+                            <br>
+                            <span class="text-e color-beanlight">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="sub-Container">
+                <div class="title">
+                    <span class="title-1 text-c color-bubble">線上
+                        <div class="title-icon-contact">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="50" height="50" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_141_123" transform="scale(0.01)"/>
+                            </pattern>
+                            <image id="image0_141_123" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>
+                        </div>點餐
+                    </span>
+                    <span class="title-2 text-e color-beanlight">News</span>
+                </div>
+                <div class="sub-Container-main">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="text-e facebook color-milktea" href="https://www.facebook.com/HEIMUxTEASHOP/" target="_blank">FACEBOOK</a>
+            <a class="text-e instagram color-milktea" href="https://www.instagram.com/heimuteashop/" target="_blank">INSTAGRAM</a>
+            <a class="text-e line color-milktea" href="https://line.me/R/ti/p/%40bmp5405q" target="_blank">LINE</a>
+        </div>
+    </div>
+</body>
+
+</html>
