@@ -419,7 +419,7 @@ a{
 .footer .facebook::before
 {
     content: '';
-    background-image:url(../images/Contact/Facebook.png);
+    background-image:url(../images/Contact/_facebook.png);
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -436,7 +436,7 @@ a{
 .footer .instagram::before
 {
     content: '';
-    background-image:url(../images/Contact/Instagram.png);
+    background-image:url(../images/Contact/_instagram.png);
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -453,7 +453,7 @@ a{
 .footer .line::before
 {
     content: '';
-    background-image:url(../images/Contact/line.png);
+    background-image:url(../images/Contact/_line.png);
     background-repeat: no-repeat;
     background-size: cover;
     
