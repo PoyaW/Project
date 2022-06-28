@@ -521,6 +521,71 @@ a{
     width: 100%;
 }
 
+/*news*/
+.sub-Container-main-news{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin-top: 20px;
+}
+
+.news-container{
+    height: 40%;
+    width: 40%;
+    background-color: rgb(171, 59, 58);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.news-img{
+    width: 65%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.news-context{
+    width: 25%;
+    height: 80%;
+}
+
+.news-context p{
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.news-seemore{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-image: url(../material/3-1.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-y: -30px;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+
+    width: 40%;
+    height: 50%;
+}
+
+.news-seemore p{
+    font-size: 1.2rem;
+    padding: 8px 5px 5px 20px;
+}
+
+.news-container:hover{
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+    transition-duration: 0.2s;
+}
+
 /*Menu*/
 
 .sub-Container-main-menu{
@@ -577,13 +642,6 @@ a{
     flex-direction: column;
 }
 
-.menu-item-sub-title{
-    width: 100%;
-    height: 20%;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .menu-item-sub{
     width: 100%;
     height: 80%;
@@ -592,6 +650,7 @@ a{
 
 .menu-item-sub-title{
     display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-image: url(../material/3-1.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -684,6 +743,8 @@ a{
 }
 
 .menu-item-sub-img{
+    width: 450px;
+    height: 350px;
     animation: slide-bck-center 0.8s ease-in both;
     animation-delay: 0.4s;
 }
@@ -998,12 +1059,18 @@ a{
     padding-top: 50px;
 }
 
-.sub-Container-main img{
-    width:450px;
+/* .sub-Container-main img{
+    width: 450px;
+    height: 350px;
+} */
+
+/*Store*/
+
+.store-img{
+    width: 450px;
     height: 350px;
 }
 
-/*Store*/
 p{
     margin: 0%;
 }
